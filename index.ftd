@@ -16,8 +16,6 @@ dark: rgba(45, 212, 143, 0.05)
 
 
 
-
-
 -- ftd.column homepage:
 optional ftd.color bg-color: $fpm.color.main.background.base
 background-color: $bg-color
@@ -28,19 +26,18 @@ append-at: content-container
 
 --- header:
 
-
-
-
-
 --- ftd.column:
 id: content-container
 width: fill 
 
 
 
+
+
+
+
+
 --- sub-menu-section:
-
-
 
 -- ftd.column sub-menu-section:
 optional string sub-menu-link1: Start Here
@@ -51,25 +48,29 @@ optional string sub-menu-link5: Development
 padding-left: 45
 padding-top: 40
 
-
 --- ftd.row:
 spacing: 32
 
 --- ftd.text: $sub-menu-link1
 color: $font.cta_primary_base
 border-bottom: 2
+role: $fpm.type.label-big
 
 --- ftd.text: $sub-menu-link2
 color: $fpm.color.main.text
+role: $fpm.type.label-big
 
 --- ftd.text: $sub-menu-link3
 color: $fpm.color.main.text
+role: $fpm.type.label-big
 
 --- ftd.text: $sub-menu-link4
 color: $fpm.color.main.text
+role: $fpm.type.label-big
 
 --- ftd.text: $sub-menu-link5
 color: $fpm.color.main.text
+role: $fpm.type.label-big
 
 
 
@@ -85,10 +86,6 @@ color: $fpm.color.main.text
 
 --- side-menu-section:
 
-
-
-
-
 -- ftd.column side-menu-section:
 optional string side-menu-link1: First Steps
 optional string side-menu-link2: Grammer
@@ -102,22 +99,29 @@ padding-left: 64
 --- ftd.text: $side-menu-link1
 color: $font.cta_primary_base
 padding-bottom: 16
+role: $fpm.type.label-small
 
 --- ftd.text: $side-menu-link2
 color: $fpm.color.main.text
 padding-bottom: 16
+role: $fpm.type.label-small
 
 --- ftd.text: $side-menu-link3
 color: $fpm.color.main.text
 padding-bottom: 16
+role: $fpm.type.label-small
 
 --- ftd.text: $side-menu-link4
 color: $fpm.color.main.text
 padding-bottom: 16
+role: $fpm.type.label-small
 
 --- ftd.text: $side-menu-link5
 color: $fpm.color.main.text
 padding-bottom: 16
+role: $fpm.type.label-small
+
+
 
 
 
@@ -143,60 +147,67 @@ optional body sub-heading2-point2: Not found anything? See FAsk questions in our
 optional body sub-heading2-point3: Report bugs with FTD in our Issue tracker.
 padding-left: 240
 margin-top: -200
-padding-bottom: 95
+padding-bottom: 74
 
 
 --- ftd.text: $body-main-heading
 color: $fpm.color.main.text-strong
 padding-bottom: 13
-role: $fpm.type.heading-hero
+role: $fpm.type.heading-large
 
 --- ftd.text: $body-main-heading-description
 color: $fpm.color.main.text
 padding-bottom: 55
+role: $fpm.type.copy-large
 
 --- ftd.text: $sub-heading1
 color: $fpm.color.main.text-strong
 padding-bottom: 2
-role: $fpm.type.heading-hero
+role: $fpm.type.heading-medium
 
 --- ftd.text: $sub-heading1-primary-body
 color: $fpm.color.main.text
 padding-bottom: 25
+role: $fpm.type.copy-relaxed
 
 --- ftd.text: $sub-heading1-point1
 color: $fpm.color.main.text
-padding-left: 20
+padding-left: 25
 padding-bottom: 5
+role: $fpm.type.copy-relaxed
 
 --- ftd.text: $sub-heading1-point2
 color: $fpm.color.main.text
 padding-bottom: 27
-padding-left: 20
-
+padding-left: 25
+role: $fpm.type.copy-relaxed
 
 --- ftd.text: $sub-heading2
 color: $fpm.color.main.text-strong
 padding-bottom: 2
-role: $fpm.type.heading-hero
+role: $fpm.type.heading-medium
 
 --- ftd.text: $sub-heading2-primary-body
 color: $fpm.color.main.text
 padding-bottom: 25
+role: $fpm.type.copy-relaxed
 
 --- ftd.text: $sub-heading1-point1
 color: $fpm.color.main.text
-padding-left: 20
+padding-left: 25
 padding-bottom: 5
+role: $fpm.type.copy-relaxed
 
 --- ftd.text: $sub-heading2-point2
 color: $fpm.color.main.text
-padding-left: 20
+padding-left: 25
 padding-bottom: 5
+role: $fpm.type.copy-relaxed
 
 --- ftd.text: $sub-heading2-point3
 color: $fpm.color.main.text
-padding-left: 20
+padding-left: 25
+role: $fpm.type.copy-relaxed
 
 
 
@@ -288,12 +299,15 @@ spacing: 32
 
 --- ftd.text: $navbar-option1
 color: $fpm.color.main.text
+role: $fpm.type.label-small
 
 --- ftd.text: $navbar-option2
 color: $fpm.color.main.text
+role: $fpm.type.label-small
 
 --- ftd.text: $navbar-option3
 color: $fpm.color.main.text
+role: $fpm.type.label-small
 
 --- ftd.image:
 src: $language-icon
@@ -304,10 +318,4 @@ src: $icon-theme-mode
 --- ftd.image:
 src: $icon-github
 link: $github-url
-
-
-
-
-
-
 

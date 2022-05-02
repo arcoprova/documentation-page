@@ -1,85 +1,313 @@
--- import: ft
--- import: config
-
--- ft.page:
-
--- ft.hero: Build optimized websites quickly, focus on your content
-image: static/images/github-light.svg
-
---- ft.action-button: Get Started
-url: /install/
-background-color: #25c19f
-color: white
-
-/--- ft.action-button: Playground
-url: https://play.fifthtry.com/
-background-color: #54c7ec
-color: white
-
--- ft.banner: ftd has some dynamic features, which an be used when using fpm-repo.
-
--- ft.feature-list:
-
---- ft.feature: Powered by Markdown
-image: static/images/undraw_typewriter.svg
-
-Save time and focus on your project's documentation. 
-Simply write docs and blog posts with Markdown/MDX and Docusaurus
-will publish a set of static HTML files ready to serve. You can
-even embed JSX components into your Markdown thanks to MDX.
-
---- ft.feature: Ready for Translations
-image: static/images/undraw_around_the_world.svg
-
-Localization comes pre-configured. Use Crowdin to translate your docs into over 70 languages.
-
---- ft.feature: Document Versioning
-image: static/images/undraw_version_control.svg
-
-Support users on all versions of your project. Document versioning
-helps you keep documentation in sync with project releases.
-
--- ft.testimony-list:
-
---- ft.testimony: Christopher "vjeux" Chedeau
-image: static/images/christopher-chedeau.a975949.200.jpg
-designation: Lead Prettier Developer
-
-I've helped open source many projects at Facebook and every one needed a website.
-They all had very similar constraints: the documentation should be written in
-markdown and be deployed via GitHub pages. I’m so glad that ftd now exists
-so that I don’t have to spend a week each time spinning up a new one.
-
---- ft.testimony: Christopher "vjeux" Chedeau
-image: static/images/christopher-chedeau.a975949.200.jpg
-designation: Lead Prettier Developer
-
-I've helped open source many projects at Facebook and every one needed a website.
-They all had very similar constraints: the documentation should be written in
-markdown and be deployed via GitHub pages. I’m so glad that ftd now exists
-so that I don’t have to spend a week each time spinning up a new one.
-
---- ft.testimony: Christopher "vjeux" Chedeau
-image: static/images/christopher-chedeau.a975949.200.jpg
-designation: Lead Prettier Developer
-
-I've helped open source many projects at Facebook and every one needed a website.
-They all had very similar constraints: the documentation should be written in
-markdown and be deployed via GitHub pages. I’m so glad ftd now exists
-so that I don’t have to spend a week each time spinning up a new one.
-
--- ft.content:
-
---- ft.h1: fpm: FTD Package Manager
-
-[What is FPM?](/fpm/about/)
-
-Checkout what is planned in [Roadmap](/fpm/roadmap/), and day to day updates in 
-the [Journal](/fpm/journal/).
-
-Github: [github.com/FifthTry/fpm](https://github.com/FifthTry/fpm)  
-Discord: [#fpm on FifthTry](https://discord.gg/a7eBUeutWD)
+-- import: fifthtry.github.io/fifthtry.com/assets
+-- import: fpm
+-- import: fifthtry.github.io/inter/assets as font-assets
+-- import: fifthtry.github.io/fifthtry.com/custom-typo as font
 
 
---- ft.youtube:
-id: rny1EGkqw_M
+-- fpm.font-display: $font-assets.fonts.Inter
+-- ftd.color header-col: rgba(45, 212, 143, 0.05)
+dark: rgba(45, 212, 143, 0.05)
+
+
+
+
+
+-- homepage:
+
+
+
+
+
+-- ftd.column homepage:
+optional ftd.color bg-color: $fpm.color.main.background.base
+background-color: $bg-color
+width: fill
+open: true
+append-at: content-container
+
+
+--- header:
+
+
+
+
+
+--- ftd.column:
+id: content-container
+width: fill 
+
+
+
+--- sub-menu-section:
+
+
+
+-- ftd.column sub-menu-section:
+optional string sub-menu-link1: Start Here
+optional string sub-menu-link2: Data Modeling
+optional string sub-menu-link3: UI Components
+optional string sub-menu-link4: Api
+optional string sub-menu-link5: Development
+padding-left: 45
+padding-top: 40
+
+
+--- ftd.row:
+spacing: 32
+
+--- ftd.text: $sub-menu-link1
+color: $font.cta_primary_base
+border-bottom: 2
+
+--- ftd.text: $sub-menu-link2
+color: $fpm.color.main.text
+
+--- ftd.text: $sub-menu-link3
+color: $fpm.color.main.text
+
+--- ftd.text: $sub-menu-link4
+color: $fpm.color.main.text
+
+--- ftd.text: $sub-menu-link5
+color: $fpm.color.main.text
+
+
+
+
+
+
+
+
+
+
+--- container: ftd.main
+
+
+--- side-menu-section:
+
+
+
+
+
+-- ftd.column side-menu-section:
+optional string side-menu-link1: First Steps
+optional string side-menu-link2: Grammer
+optional string side-menu-link3: Import
+optional string side-menu-link4: Library
+optional string side-menu-link5: Comments
+padding-top: 75
+padding-left: 64
+
+
+--- ftd.text: $side-menu-link1
+color: $font.cta_primary_base
+padding-bottom: 16
+
+--- ftd.text: $side-menu-link2
+color: $fpm.color.main.text
+padding-bottom: 16
+
+--- ftd.text: $side-menu-link3
+color: $fpm.color.main.text
+padding-bottom: 16
+
+--- ftd.text: $side-menu-link4
+color: $fpm.color.main.text
+padding-bottom: 16
+
+--- ftd.text: $side-menu-link5
+color: $fpm.color.main.text
+padding-bottom: 16
+
+
+
+
+
+
+
+--- container: ftd.main
+
+--- total-body-part:
+
+-- ftd.column total-body-part:
+optional string body-main-heading:  FTD Documentation
+optional body body-main-heading-description: Everything you need to know about FTD
+optional string sub-heading1: First Steps
+optional body sub-heading1-primary-body: Are you new to FTD or to programming? This is the place to start!
+optional body sub-heading1-point1: From Scratch: Overview | Installation
+optional body sub-heading1-point2: Tutorial: Creating Your First FPM Package
+optional string sub-heading2: Getting Help
+optional body sub-heading2-primary-body: Having trouble? We’d like to help!
+optional body sub-heading2-point1: Try the FAQ - it’s got answers to many common questions
+optional body sub-heading2-point2: Not found anything? See FAsk questions in our community
+optional body sub-heading2-point3: Report bugs with FTD in our Issue tracker.
+padding-left: 240
+margin-top: -200
+padding-bottom: 95
+
+
+--- ftd.text: $body-main-heading
+color: $fpm.color.main.text-strong
+padding-bottom: 13
+role: $fpm.type.heading-hero
+
+--- ftd.text: $body-main-heading-description
+color: $fpm.color.main.text
+padding-bottom: 55
+
+--- ftd.text: $sub-heading1
+color: $fpm.color.main.text-strong
+padding-bottom: 2
+role: $fpm.type.heading-hero
+
+--- ftd.text: $sub-heading1-primary-body
+color: $fpm.color.main.text
+padding-bottom: 25
+
+--- ftd.text: $sub-heading1-point1
+color: $fpm.color.main.text
+padding-left: 20
+padding-bottom: 5
+
+--- ftd.text: $sub-heading1-point2
+color: $fpm.color.main.text
+padding-bottom: 27
+padding-left: 20
+
+
+--- ftd.text: $sub-heading2
+color: $fpm.color.main.text-strong
+padding-bottom: 2
+role: $fpm.type.heading-hero
+
+--- ftd.text: $sub-heading2-primary-body
+color: $fpm.color.main.text
+padding-bottom: 25
+
+--- ftd.text: $sub-heading1-point1
+color: $fpm.color.main.text
+padding-left: 20
+padding-bottom: 5
+
+--- ftd.text: $sub-heading2-point2
+color: $fpm.color.main.text
+padding-left: 20
+padding-bottom: 5
+
+--- ftd.text: $sub-heading2-point3
+color: $fpm.color.main.text
+padding-left: 20
+
+
+
+
+
+
+
+
+
+
+-- ftd.column header:
+optional ftd.image-src logo: $assets.files.assets.images.fifthtry-logo.png
+optional string site-title: 
+optional string fallback-site-title: Logo
+optional string home-url: /
+optional ftd.color header-bg: $fpm.color.glass.background.base
+optional string navbar-option1: Why FTD?
+optional string navbar-option2: Docs
+optional string navbar-option3: News
+optional ftd.image-src language-icon: $assets.files.assets.images.language-icon.png
+optional ftd.image-src icon-theme-mode: $assets.files.assets.images.icon-moon.png
+optional ftd.image-src icon-github: $assets.files.assets.images.icon-github.png
+optional string github-url: https://arcoprova.github.io/doc-page/
+padding-horizontal: 48
+background-color: $header-col
+width: fill
+
+
+--- header-section-left:
+site-logo: $logo
+id: main-row
+
+--- container: main-row
+
+--- header-section-right:
+navbar-option1: $navbar-option1
+navbar-option1: $navbar-option2
+navbar-option1: $navbar-option3
+language-icon: $language-icon
+icon-theme-mode: $icon-theme-mode
+icon-github: $icon-github
+
+
+
+
+
+
+
+-- ftd.row header-section-left:
+width: fill
+ftd.image-src site-logo:
+id: main-row
+
+--- ftd.row:
+width: fill
+id: left-header
+padding-vertical: 26
+
+--- ftd.image: 
+src: $site-logo
+height: 32
+width: 92
+
+--- container: ftd.main
+
+
+
+
+
+
+-- ftd.row header-section-right:
+id: right-header
+optional string navbar-option1:
+optional string navbar-option2:
+optional string navbar-option3:
+optional ftd.image-src language-icon:
+optional ftd.image-src icon-theme-mode:
+optional ftd.image-src icon-github:
+optional string github-url: 
+padding-vertical: 30
+spacing: 32
+
+
+
+
+--- ftd.row:
+padding-left: 16
+spacing: 32
+
+--- ftd.text: $navbar-option1
+color: $fpm.color.main.text
+
+--- ftd.text: $navbar-option2
+color: $fpm.color.main.text
+
+--- ftd.text: $navbar-option3
+color: $fpm.color.main.text
+
+--- ftd.image:
+src: $language-icon
+
+--- ftd.image:
+src: $icon-theme-mode
+
+--- ftd.image:
+src: $icon-github
+link: $github-url
+
+
+
+
+
+
+

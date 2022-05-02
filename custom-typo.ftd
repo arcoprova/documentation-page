@@ -1,0 +1,32 @@
+-- import: fifthtry.github.io/fifthtry.com/assets
+-- import: fpm
+-- import: fifthtry.github.io/inter/assets as font-assets
+
+-- fpm.font-display: $font-assets.fonts.Inter
+
+
+
+
+-- ftd.color main-text-color:
+light: #FFFBFE
+dark: #1C1B1F
+
+
+
+-- ftd.color cta_secondary_base:
+light: #4FB2DF
+dark: #4FB2DF
+
+
+-- ftd.color cta_primary_base:
+light: #2DD4BF
+dark: #2DD4BF
+
+
+
+
+
+
+
+
+
